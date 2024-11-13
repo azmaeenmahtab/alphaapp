@@ -36,14 +36,22 @@
         class="home min-h-screen bg-[url('images/background.png')] bg-no-repeat   bg-center text-center  flex flex-col items-center justify-center gap-5">
         <h1 class="text-white font-anton text-[170px]">ALPHA CLASH</h1>
         <P class="text-white font-poppins text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</P>
-        <button class="bg-white text-black btn">Play Now</button>
+        <button class="bg-white text-black btn" onclick="play()">Play Now</button>
     </section>
     <!-- second page -->
     <section
-        class="play-ground min-h-screen bg-[url('images/background.png')] bg-no-repeat   bg-center flex flex-col gap-5 items-center justify-center">
+        class="hidden min-h-screen bg-[url('images/background.png')] bg-no-repeat   bg-center flex flex-col gap-24 items-center justify-center">
         <!-- screen -->
         <div class="flex justify-center">
-            <div class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] rounded-2xl">1024×320</div>
+            <div
+                class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] rounded-2xl border-[20px] border-[#010313CC]">
+                <div class="flex justify-center">
+                    <p class="text-white bg-[#010313CC] p-3 rounded-b-md">Don't watch keyboard while playing...</p>
+                </div>
+                <div class="font-bold text-9xl flex justify-center items-center pt-10">
+                    <p>Y</p>
+                </div>
+            </div>
         </div>
         <!-- key board -->
         <div class=" ">
@@ -81,11 +89,28 @@
                 <kbd class="kbd">/</kbd>
             </div>
         </div>
-        <div></div>
+        <!-- buttons -->
+        <div class="flex lg:w-[1024px] justify-between  ">
+            <button class="btn bg-[#894189] border-none text-white">Life
+                <img src="images/Group 23.svg" alt="">
+                <span>1</span>
+            </button>
+            <button class="btn bg-[#360490] border-none text-white">
+                Score <img src="images/monetization_on.svg" alt="">
+                <span>1</span>
+            </button>
+        </div>
     </section>
-    <section class="score">
-
+    <!-- third page -->
+    <section
+        class="hidden min-h-screen bg-[url('images/background.png')] bg-no-repeat   bg-center flex justify-center items-center">
+        <div class="text-white  text-center space-y-10 bg-[#FFFFFF33] rounded-lg p-10">
+            <h1 class="text-6xl font-bold">Score : <span>14</span></h1>
+            <button class="text-black text-2xl btn bg-white  ">Play Again</button>
+            <p class="text-2xl">Practice will make you Pro</p>
+        </div>
     </section>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
