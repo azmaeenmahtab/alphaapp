@@ -14,3 +14,11 @@ function setBgColor(elementid) {
 function removeBgColor(elementid) {
     document.getElementById(elementid).classList.remove('bg-red-400')
 }
+
+// set score
+function setScore(elementid) {
+    let score = document.getElementById(elementid).innerText;
+    let numberScore = parseInt(score)
+    let newScore = numberScore + 1;
+    document.getElementById(elementid).innerText = newScore;
+}

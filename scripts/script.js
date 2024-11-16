@@ -20,7 +20,10 @@ function matchCharacter(event) {
     if (pressedKey === currentCharacter) {
         removeBgColor(currentCharacter)
         console.log('ok')
+        // set score
+        setScore('score-show')
 
+        // continue the game again
         let randomChar = getRandomAlphabet()
         document.getElementById('showAlphabet').innerText = randomChar;
         setBgColor(randomChar.toLowerCase())
