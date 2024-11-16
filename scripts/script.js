@@ -11,10 +11,13 @@ function play() {
 
 
     setBgColor(randomChar.toLowerCase())
-
-
-
-
-
-
 }
+function matchCharacter(event) {
+    let pressedKey = event.key;
+    let currentCharacter = document.getElementById('showAlphabet').innerText.toLocaleLowerCase()
+    if (pressedKey === currentCharacter) {
+        console.log('ok')
+    }
+    else { console.log('not ok') }
+}
+document.addEventListener('keyup', matchCharacter)

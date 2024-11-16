@@ -9,3 +9,4 @@ function getRandomAlphabet() {
 function setBgColor(elementid) {
     document.getElementById(elementid).classList.add('bg-red-400')
 }
+
