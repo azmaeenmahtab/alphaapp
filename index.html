@@ -99,20 +99,22 @@
         <div class="flex lg:w-[1024px] justify-between  ">
             <button class="btn bg-[#894189] border-none text-white">Life
                 <img src="images/Group 23.svg" alt="">
-                <span>1</span>
+                <span id="life-count">5</span>
             </button>
             <button class="btn bg-[#360490] border-none text-white">
                 Score <img src="images/monetization_on.svg" alt="">
-                <span id="score-show">1</span>
+                <span id="score-show">0</span>
             </button>
         </div>
     </section>
     <!-- third page -->
     <section
-        class="hidden min-h-screen bg-[url('images/background.png')] bg-no-repeat   bg-center flex justify-center items-center">
+        class="hidden min-h-screen bg-[url('images/background.png')] bg-no-repeat   bg-center flex justify-center items-center"
+        id="third-page">
         <div class="text-white  text-center space-y-10 bg-[#FFFFFF33] rounded-lg p-10">
-            <h1 class="text-6xl font-bold">Score : <span>14</span></h1>
-            <button class="text-black text-2xl btn bg-white  ">Play Again</button>
+            <h1 class="text-6xl font-bold text-red-500">Game Over !!!</h1>
+            <h1 class="text-6xl font-bold">Score : <span id="final-score">14</span></h1>
+            <button class="text-black text-2xl btn bg-white  " onclick="playAgain()">Play Again</button>
             <p class="text-2xl">Practice will make you Pro</p>
         </div>
     </section>

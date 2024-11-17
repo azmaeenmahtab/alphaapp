@@ -1,3 +1,4 @@
+// creat random alphabet
 function getRandomAlphabet() {
     const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const alphabetArray = alphabets.split('');
@@ -5,7 +6,7 @@ function getRandomAlphabet() {
     return alphabetArray[randomIndex];
 }
 
-
+// set background color
 function setBgColor(elementid) {
     document.getElementById(elementid).classList.add('bg-red-400')
 }
@@ -16,9 +17,13 @@ function removeBgColor(elementid) {
 }
 
 // set score
-function setScore(elementid) {
-    let score = document.getElementById(elementid).innerText;
-    let numberScore = parseInt(score)
-    let newScore = numberScore + 1;
-    document.getElementById(elementid).innerText = newScore;
+
+
+// hide element by id
+function hideElementById(elementId) {
+    document.getElementById(elementId).classList.add('hidden')
+}
+// show element by id
+function showElementById(elementId) {
+    document.getElementById(elementId).classList.remove('hidden')
 }
