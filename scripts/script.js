@@ -64,7 +64,7 @@ function checkEnterIsPressed(event) {
     if (event.key === 'Enter') {
         hideElementById('first-page')
         showElementById('second-page')
-        play()
+        playAgain()
     }
 
 }
